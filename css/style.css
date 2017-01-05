@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+  font-family:"Open Sans", sans-serif;
+  width: calc(100vw - 34px); /*Fixes scrollbar shifting the whole website*/
+}
+
+#logo{
+    background-color:#000;
+    padding-left:33%;
+    width:33% !important;
+    padding-right:33%;
+    height:10%;
+}
+
+.content{
+  color:#ddd;
+  width:90%;
+  padding-left:5%;
+}
+
+body{
+  background-color:#000;
+}
+
+.navlink a:visited{
+  color:#ddd;
+}
+
+.navlink a{
+  text-decoration:none;
+  color:#ddd;
+}
+
+.active{
+  background-color:#222;
+}
+
+.navlink{
+  text-decoration:none;
+  list-style:none;
+  width:15%;
+  padding-right:0;
+  display:inline-block;
+  text-align:center;
+}
+
+ul{
+  text-decoration:none;
+  display:block;
+  width:97%;
+}
+
+.navbar{
+  display:block;
+  width:100%;
+  background-color:#000;
+}
+
+.links .pdf{
+  color:#999;
+  text-decoration:underline;
+  font-size:1.1em;
+}
+
+.links .pdf:hover{
+  text-decoration:none;
+}
+
+.desc{
+  padding-left:4%;
+}
+
+.general, .website, .vision, .telemetry, .robot{
+  display:none;
+}
