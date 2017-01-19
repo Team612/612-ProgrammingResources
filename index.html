@@ -10,16 +10,16 @@
       <img id="logo" src="img/logo.png">
       <div class="navbar">
         <ul>
-          <li class="active navlink homelink"><a href="#">Home</a></li>
-          <li class="navlink genlink"><a href="#">General</a></li>
-          <li class="navlink robotlink"><a href="#">Robot Code</a></li>
-          <li class="navlink telelink"><a href="#">Telemetry SysDev</a></li>
-          <li class="navlink visionlink"><a href="#">Vision</a></li>
-          <li class="navlink weblink"><a href="#">Website</a></li>
+          <li class="active navlink" id="homelink"><a href="#">Home</a></li>
+          <li class="navlink" id="genlink"><a href="#">General</a></li>
+          <li class="navlink" id="robotlink"><a href="#">Robot Code</a></li>
+          <li class="navlink" id="telelink"><a href="#">Telemetry SysDev</a></li>
+          <li class="navlink" id="visionlink"><a href="#">Vision</a></li>
+          <li class="navlink" id="weblink"><a href="#">Website</a></li>
         </ul>
       </div>
       <br>
-      <div class="content home">
+      <div class="content" id="home">
         <p>
           Welcome to the 612 Programming Resources website! This will host the various powerpoints and other resources that we've compiled over the years. Use the nagivation bar at the top to go to the relevant subdivision. Each page will have the relevant powerpoints as well as a short description on what that subdivision does. Below are resources that are relevant to the whole robotics team.
         </p>
@@ -40,7 +40,7 @@
           <p class="desc">This pdf contains the encrypted team versions of field assmebly/components, for ease of construction</p>
         </div>
       </div>
-      <div class="content general">
+      <div class="content" id="general">
         <h3 class="title">General Information</h3>
         <p>
           The pdfs below are information relevant to all subdivisions. This includes things like software used on the programming team, tutorials for installing the software, and the basics of programming in general.
@@ -61,7 +61,7 @@
           <p class="desc">This powerpoint summarizes how the compiler works in C++ and the pros/cons of high level and low level programming languages.</p>
         </div>
       </div>
-      <div class="content vision">
+      <div class="content" id="vision">
         <h3 class="title">Vision</h3>
         <p class="desc">This division is in charge of the vision algorithm for the robotics team. They use Python to analyze images and video to find important information for use during both autonomous and teleoperated periods of the game.</p>
         <h3 class="title">Powerpoints</h3>
@@ -74,7 +74,7 @@
           <p class="desc">This powerpoint shows the software and hardware used in the process of machine learning, or teaching the computer how to recognize certain objects in an image.</p>
         </div>
       </div>
-      <div class="content robot">
+      <div class="content" id="robot">
         <h3 class="title">Robot Code</h3>
         <p class="desc">This subidivision writes the code that controls the robot. This includes controlling the drivetrain and any other moving parts of the robot, as well as the autonomous algorithm in tandem with vision.</p>
         <div class="links">
@@ -100,7 +100,7 @@
           <p class="desc">This powerpoint shows the important concept of pointers, which allow variables to point to a memory address instead of an actual value.</p>
         </div>
       </div>
-      <div class="content website">
+      <div class="content" id="website">
         <h3 class="title">Website</h3>
         <p class="desc">The website division is in charge of making the websites that represent 612, including this website (just for programming) and the website for the entire robotics team.</p>
         <h3 class="title">Powerpoints</h3>
@@ -121,7 +121,7 @@
           <p class="desc">JQuery is a javascript plugin that allows the developer to add responsiveness and animations in a very simple way.</p>
         </div>
       </div>
-      <div class="content telemetry">
+      <div class="content" id="telemetry">
         <h3 class="title">Telemetry and System Developement</h3>
         <p class="desc">The telemetry subteam is in charge of driver feedback, post-game analysis, control systems, and implementing robot features that go beyond the roboRIO.</p>
         <h3 class="title">Powerpoints</h3>
