@@ -49,16 +49,23 @@ document.addEventListener('keydown', function(event){
 
 var links=[".genlink", ".robotlink", ".visionlink", ".weblink", ".telelink", ".homelink"];
 var content=[".general", ".robot", ".vision", ".website", ".telemetry", ".home"];
+var isDisplayed = [false, false, false, false, false, true]; //So we know which is displayed
 
 var changeLink = function(toActive, body){
   for(var i=0;i<links.length;i++){
     $(links[i]).removeClass("active");
   };
   $(toActive).addClass('active');
-  for(var i=0;i<links.length;i++){
-    $(content[i]).hide();
+  for(var i=0;i<content.length;i++){
+    if(isDisplayed[i]){
+      $(content[i]).slideUp(500, function(){ //Takes 500ms to do the fancy animation
+        isDisplayed[i]=false;
+        $(body).slideDown(500); //Before starting the next (so they don't overlap)
+        isDisplayed[content.indexOf(body)] = true; //So that the array knows which is active
+      });
+      break;
+    }
   }
-  $(body).show();
 }
 
 $(".homelink").click(function(){changeLink(".homelink", ".home");});
