@@ -47,24 +47,17 @@ $(document).ready(function(){
     }
   });
 
-<<<<<<< HEAD
   var general = { //Object for each of the main content blocks
     link: "#genlink",
     body: "#general",
     isActive: false
   };
-=======
-var links=[".genlink", ".robotlink", ".visionlink", ".weblink", ".telelink", ".homelink"];
-var content=[".general", ".robot", ".vision", ".website", ".telemetry", ".home"];
-var isDisplayed = [false, false, false, false, false, true]; //So we know which is displayed
->>>>>>> 680b60bc4df0f6a7b18fd3dc9b9f700fb6d639c9
 
   var robot = {
     link: "#robotlink",
     body: "#robot",
     isActive: false
   };
-<<<<<<< HEAD
 
   var vision = {
     link: "#visionlink",
@@ -123,20 +116,6 @@ var isDisplayed = [false, false, false, false, false, true]; //So we know which 
     }
     if(parent.queue().length==0)isMoving = false; //Only want isMoving to be false if htere's no queueing animations
   }
-=======
-  $(toActive).addClass('active');
-  for(var i=0;i<content.length;i++){
-    if(isDisplayed[i]){
-      $(content[i]).slideUp(500, function(){ //Takes 500ms to do the fancy animation
-        isDisplayed[i]=false;
-        $(body).slideDown(500); //Before starting the next (so they don't overlap)
-        isDisplayed[content.indexOf(body)] = true; //So that the array knows which is active
-      });
-      break;
-    }
-  }
-}
->>>>>>> 680b60bc4df0f6a7b18fd3dc9b9f700fb6d639c9
 
   $("#homelink").click(function(){changeLink(home);});
   $("#genlink").click(function(){changeLink(general);});
