@@ -85,19 +85,36 @@ $(document).ready(function(){
 
   var content=[home, general, robot, vision, website, telemetry];
 
+  var isMoving = false;
+  var parent = $("body");
+
   var changeLink = function(obj){ //Changes the content block that is currently displayed
+    if(isMoving){
+      for(var i=0;i<content.length;i++){
+        if(content[i].isActive){
+          parent.finish();
+          break;
+        }
+      }
+    }
     for(var i=0;i<content.length;i++){
       if(content[i].isActive){
+        if(content[i]===obj)break; //If they click on the active one
         content[i].isActive = false;
         $(content[i].link).removeClass("active"); //Changes background of the navbar at the top
         $(obj.link).addClass("active");
         obj.isActive = true;
-        $(content[i].body).slideUp(500, function(){ //Hide the actual content
-          $(obj.body).slideDown(500); //And then display the new
+        isMoving = true;
+        parent.queue(function(next){
+          $(content[i].body).slideUp(500, next);
+        });
+        parent.queue(function(next){
+          $(obj.body).slideDown(500, next);
         });
         break;
       }
     }
+    if(parent.queue().length==0)isMoving = false; //Only want isMoving to be false if htere's no queueing animations
   }
 
   $("#homelink").click(function(){changeLink(home);});
