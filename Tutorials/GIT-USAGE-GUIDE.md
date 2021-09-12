@@ -14,8 +14,7 @@ Often used to create code from a template
 
 1. Repeat step 3 above.
 2. Type ```git add -A```
-3. Type ```git status``` and make sure all changes are staged for commit.
-4. Type ```git commit -m "[message]"```
-    - (Alternatively, you can use ```git commit -am "[message]"``` to combine steps 2 and 4)
-5. Type ```git push origin [branch name]```
-6. Success!
+3. Type ```git commit -m "[message]"```
+    - (Alternatively, you can use ```git commit -am "[message]"``` to combine steps 2 and 3)
+4. Type ```git push origin [branch name]```
+5. Success! Along the way, it's good practice to type ```git status``` just in case.
