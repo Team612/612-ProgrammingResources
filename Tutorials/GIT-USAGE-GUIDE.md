@@ -22,6 +22,7 @@ Often used to create code from a template
 
 1. Repeat step 3 above.
 2. Type ```git add -A```
+* ```git add -A``` adds all changes within the git repository. In the rare instance that you do not want to do that, you may need to use a different command. See [this video](https://www.youtube.com/watch?v=tcd4txbTtAY) for more details.
 3. Type ```git commit -m "[message]"```
     - (Alternatively, you can use ```git commit -am "[message]"``` to combine steps 2 and 3)
 4. (Usually required but sometimes optional)
@@ -52,3 +53,4 @@ The handy thing about Issues and Pull Requests is that they can be linked with a
         * [About branches](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)
         * [About Pull Requests](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
         * [Creating a Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+* [*Git Tutorial: Difference between "add -A", "add -u", "add .", and "add \*"* (video)](https://www.youtube.com/watch?v=tcd4txbTtAY)
