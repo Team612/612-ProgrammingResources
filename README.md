@@ -1,6 +1,6 @@
 # 612 Resources
 
-This repository contains the most current versions of all of Chantilly Robotics
+This repository, which is a work in progress as of September 2021, will contain the most current versions of all of Chantilly Robotics
 612's code and tool conventions documents.
 
  Most important branches
