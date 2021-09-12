@@ -1,9 +1,16 @@
-# Code Conventions
+# 612 Resources
 
 This repository contains the most current versions of all of Chantilly Robotics
 612's code and tool conventions documents.
 
-Current standards include:
+ Most important branches
+
+| Branch              | Purpose                                                        |
+|---------------------|----------------------------------------------------------------|
+| master              | Current (2021-22) markdown guides for conventions and lessons  |
+| 2017archive         | Website (2017) with PowerPoint lessons. Click index.html to view|
+
+ Current standards include:
 
 | Language/Tool       | Filename                                                       |
 |---------------------|----------------------------------------------------------------|
