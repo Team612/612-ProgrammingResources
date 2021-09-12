@@ -32,8 +32,9 @@ Example: `kitbot-swerve_drive`
 #### Special naming cases
 The following are special branches repository that do not need prefixes:  
 
-* *master* - the most up to date version of the code. master must compile at all
+* *main* - the most up to date version of the code. master must compile at all
 times. Do not merge into master without permission from the programming captain.
+Older repositories, including this one, have the name *master* instead of *main*, as it has been the default name for git, and thus, has been the default name for GitHub and other git clients until fairly recently. Git plans on changing the name from master in the near future.
 
 * *workingcode* - the latest code confirmed completely tested on official hardware
 and working. This branch is frequently updated after competition. This branch must
