@@ -1,4 +1,4 @@
-#Github Style Guide
+# Github Style Guide
 These rules are meant as guidelines for commit messages and branching for FIRST
 Team 612. These are not hard-and-fast rules; all actions in git should first and
 foremost be made for logical reasons. However, these guidelines allow consistency
