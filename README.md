@@ -7,8 +7,8 @@ This repository contains the most current versions of all of Chantilly Robotics
 
 | Branch              | Purpose                                                        |
 |---------------------|----------------------------------------------------------------|
-| master              | Current (2021-22) markdown guides for conventions and lessons  |
-| 2017archive         | Website (2017) with PowerPoint lessons. Click index.html to view|
+| master              | Current (2021-22) markdown guides for conventions and lessons. Similar format as 2017 CodeConventions repository  |
+| 2017archive         | Website (2017) with old PowerPoint lessons that may serve useful. Click index.html to view|
 
  Current standards include:
 
