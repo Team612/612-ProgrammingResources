@@ -203,20 +203,20 @@ if (15 < 20) {/*code*/} //same here. If 15 is less than 20, it returns a boolean
 ```
 ## Logical operators:
 
-### && logical "and" 
+### logical "and": && 
 Checks if both conditions are valid.
 ```java
 if (x = 20 && y == 30) {code} //executes code because both conditions are true.
 ```
-### || logical "or" 
+### logical "or": || 
 Checks if both conditions are valid.
 ```java
 if (x == 20 || y == 420) {code} //condition is true, so executes.
 ```
-### ! logical "not" 
+### logical "not": ! 
 Precedes condition and negates it. != is "not equal to"
-### == equal to. We use 2 instead of one because one equals sign establishes a variable.
-
+### equal comparison operator: ==
+We use 2 instead of one because one equals sign establishes a variable.
 ```java
 int x = 20;
 int y = 30;
