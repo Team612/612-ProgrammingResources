@@ -181,10 +181,12 @@ If/else statements
 boolean x = true;
 boolean y = false;
 boolean z = true;
-if (x) { //if this is true, executes this command and skips else if and else statements; otherwise, skips to next statement. Can also write if (x==true)
+if (x) 
+{ //if this is true, executes this command and skips else if and else statements; otherwise, skips to next statement. Can also write if (x==true)
     //commands to be executed
 }
-else if (y) { //if y is true, execute and skip rest of the statements. If not, skips to next statement. else if is optional
+else if (y) 
+{ //if y is true, execute and skip rest of the statements. If not, skips to next statement. else if is optional
     //commands
 }
 else if (z == false) //Checks if z is false
@@ -198,16 +200,7 @@ boolean y = false;
 if (x) {/*code*/} //within the parentheses is a boolean. It checks if the boolean is true and executes if so.
 if (y == false) {/*code*/} //within the parentheses is a condition that is converted to a boolean. Since y is in fact false, it returns a signal of "true" to the computer and the computer runs the code.
 if (15 < 20) {/*code*/} //same here. If 15 is less than 20, it returns a boolean value of true to the computer without you making a boolean variable on your own.
-
-int x = 20;
-int y = 30;
-int z = 40;
-/*
-Review of operators:
-+ adds, - subtracts, * multiplies, / divides.
-Operators we haven't covered too extensively yet:
->, <, >=, <= (probably familiar with these in math class. Greater than, less than, etc.)
-% calculates the remainder
+```
 Logical operators:
 &&: logical and. Checks if both conditions are valid.
 if (x = 20 && y == 30) {code} //executes code because both conditions are true.
@@ -215,24 +208,35 @@ if (x = 20 && y == 30) {code} //executes code because both conditions are true.
 if (x == 20 || y == 420) {code} //condition is true, so executes.
 !: logical not. Precedes condition and negates it. != is "not equal to"
 ==: equal to. We use 2 instead of one because one equals sign establishes a variable.
-*/
 
-if (x != 612 || y != 612 || x != 1885 || y !=1885) { //executes
+```java
+int x = 20;
+int y = 30;
+int z = 40;
+
+if (x != 612 || y != 612 || x != 1885 || y !=1885) 
+{ //executes
     System.out.println("no");
 }
-else if (!(x == 420 || z == 40)) { //doesn't execute this code because even though the condition is true (i.e. either x is 420 or z is 40), the "!" negates the whole thing, returning a value of "false" to the computer
+
+else if (!(x == 420 || z == 40)) 
+{ //doesn't execute this code because even though the condition is true (i.e. either x is 420 or z is 40), the "!" negates the whole thing, returning a value of "false" to the computer
     System.out.println("uh");
 }
-if (!(x != 20 && y != 30 && z != 40)) {//executes because the inner condition is false, but is negated and becomes true
+
+if (!(x != 20 && y != 30 && z != 40)) 
+{//executes because the inner condition is false, but is negated and becomes true
     //code
 }
-if ((!(x == 20) && z == 2) == true) {//executes because:
-/*
-x == 20. This is true, so the condition in these parentheses are true.
-!(x==20) is the same as !(true) which is false.
-false && z == 2: this returns true because both are false.
-true == true: this statement is true, so it runs this block of code.
-*/
+
+if ((!(x == 20) && z == 2) == true)
+{ //executes because:
+    /*
+    x == 20. This is true, so the condition in these parentheses are true.
+    !(x==20) is the same as !(true) which is false.
+    false && z == 2: this returns true because both are false.
+    true == true: this statement is true, so it runs this block of code.
+    */
     //code
 }
 ```
