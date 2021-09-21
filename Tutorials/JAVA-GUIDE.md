@@ -201,13 +201,21 @@ if (x) {/*code*/} //within the parentheses is a boolean. It checks if the boolea
 if (y == false) {/*code*/} //within the parentheses is a condition that is converted to a boolean. Since y is in fact false, it returns a signal of "true" to the computer and the computer runs the code.
 if (15 < 20) {/*code*/} //same here. If 15 is less than 20, it returns a boolean value of true to the computer without you making a boolean variable on your own.
 ```
-Logical operators:
-&&: logical and. Checks if both conditions are valid.
+## Logical operators:
+
+### && logical "and" 
+Checks if both conditions are valid.
+```java
 if (x = 20 && y == 30) {code} //executes code because both conditions are true.
-||: logical or. Checks if both conditions are valid.
+```
+### || logical "or" 
+Checks if both conditions are valid.
+```java
 if (x == 20 || y == 420) {code} //condition is true, so executes.
-!: logical not. Precedes condition and negates it. != is "not equal to"
-==: equal to. We use 2 instead of one because one equals sign establishes a variable.
+```
+### ! logical "not" 
+Precedes condition and negates it. != is "not equal to"
+### == equal to. We use 2 instead of one because one equals sign establishes a variable.
 
 ```java
 int x = 20;
