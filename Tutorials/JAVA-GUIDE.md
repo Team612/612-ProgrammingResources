@@ -181,16 +181,27 @@ If/else statements
 boolean x = true;
 boolean y = false;
 boolean z = true;
+
 if (x) 
-{ //if this is true, executes this command and skips else if and else statements; otherwise, skips to next statement. Can also write if (x==true)
+{ 
+    //if this parameter (x) is true, executes this command and skips else if and else statements; otherwise, skips to next statement. Can also write if (x==true)
     //commands to be executed
 }
+
 else if (y) 
-{ //if y is true, execute and skip rest of the statements. If not, skips to next statement. else if is optional
+{ 
+    //if y is true, execute and skip rest of the statements. If not, skips to next statement. else if is optional
     //commands
 }
-else if (z == false) //Checks if z is false
-else {//if none of the above are true, execute these commands
+
+else if (z == false) 
+{ 
+    //Checks if z is false
+}
+
+else 
+{
+    //if none of the above are true, execute these commands
     //commands
 }
 
@@ -206,11 +217,17 @@ if (15 < 20) {/*code*/} //same here. If 15 is less than 20, it returns a boolean
 ### logical "and": && 
 Checks if both conditions are valid.
 ```java
+int x = 20;
+int y = 30;
+int z = 40;
 if (x = 20 && y == 30) {code} //executes code because both conditions are true.
 ```
 ### logical "or": || 
-Checks if both conditions are valid.
+Checks if one condition is valid.
 ```java
+int x = 20;
+int y = 30;
+int z = 40;
 if (x == 20 || y == 420) {code} //condition is true, so executes.
 ```
 ### logical "not": ! 
