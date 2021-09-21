@@ -228,7 +228,7 @@ Checks if one condition is valid.
 int x = 20;
 int y = 30;
 int z = 40;
-if (x == 20 || y == 420) {code} //condition is true, so executes.
+if (x == 20 || y == 22) {code} //condition is true, so executes.
 ```
 ### logical "not": ! 
 Precedes condition and negates it. != is "not equal to"
@@ -244,13 +244,15 @@ if (x != 612 || y != 612 || x != 1885 || y !=1885)
     System.out.println("no");
 }
 
-else if (!(x == 420 || z == 40)) 
-{ //doesn't execute this code because even though the condition is true (i.e. either x is 420 or z is 40), the "!" negates the whole thing, returning a value of "false" to the computer
+else if (!(x == 612 || z == 40)) 
+{ 
+    //doesn't execute this code because even though the condition is true (i.e. either x is 612 or z is 40), the "!" negates the whole thing, returning a value of "false" to the computer
     System.out.println("uh");
 }
 
 if (!(x != 20 && y != 30 && z != 40)) 
-{//executes because the inner condition is false, but is negated and becomes true
+{
+    //executes because the inner condition is false, but is negated and becomes true
     //code
 }
 
