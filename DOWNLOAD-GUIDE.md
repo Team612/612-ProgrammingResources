@@ -37,7 +37,7 @@ Git is what 612 uses to collaborate with code. It allows us to push and pull our
     
     Edited
     
-    ![New path to install to](static/downloadGuide/git/2_GitPathNew.png)
+    ![New path to install to](static/downloadGuide/git/2_gitPathNew.png)
 
 3. When asked which components to install, do not uncheck any of the existing checkboxes. It's also recommended that you add "Check daily for updates." After that, you are free to choose whichever you want.
     
