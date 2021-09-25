@@ -27,7 +27,7 @@ On the page with the checkboxes, select all of the options available.
 
 Git is what 612 uses to collaborate with code. It allows us to push and pull our code from GitHub so that we all can collaborate.
 
-1. Install git from [here](https://git-scm.com/). On Windows, walk through the installation instructions.
+1. Install git from [the git website](https://git-scm.com/). On Windows, walk through the installation instructions.
 
 2. **For those on school computers** By default, git will install under the AppData folder, which school computers don't have permission to write to. Change it to a folder that you have access to. It's recommended to simply put it under C:\Users\user\Git, as seen in the image.
     
