@@ -33,11 +33,11 @@ Git is what 612 uses to collaborate with code. It allows us to push and pull our
     
     Original
 
-    ![Original, do not continue if on school computers](static/downloadGuide/git/1_gitPathDefault.png)    
+    ![Original, do not continue if on school computers](static/downloadGuide/git/1_GitPathDefault.png)    
     
     Edited
     
-    ![New path to install to, use this option on school computers](static/downloadGuide/git/2_gitPathNew.png)
+    ![New path to install to, use this option on school computers](static/downloadGuide/git/2_GitPathNew.png)
 
 3. When asked which components to install, do not uncheck any of the existing checkboxes. It's also recommended that you add "Check daily for updates." After that, you are free to choose whichever you want.
     
