@@ -24,8 +24,11 @@ When you come to [this image](https://docs.wpilib.org/en/stable/_images/installe
 On the page with the checkboxes, select all of the options available.
 
 ## Installing Git
+
 Git is what 612 uses to collaborate with code. It allows us to push and pull our code from GitHub so that we all can collaborate.
+
 1. Install git from [here](https://git-scm.com/). On Windows, walk through the installation instructions.
+
 2. **For those on school computers** By default, git will install under the AppData folder, which school computers don't have permission to write to. Change it to a folder that you have access to. It's recommended to simply put it under C:\Users\user\Git, as seen in the image.
     
     Original
@@ -37,6 +40,7 @@ Git is what 612 uses to collaborate with code. It allows us to push and pull our
     ![New path to install to](static/downloadGuide/git/2_GitPathNew.png)
 
 3. When asked which components to install, do not uncheck any of the existing checkboxes. It's also recommended that you add "Check daily for updates." After that, you are free to choose whichever you want.
+    
     ![Components](static/downloadGuide/git/3_gitComponents.png)
 
 4. When reaching the text editor option:
