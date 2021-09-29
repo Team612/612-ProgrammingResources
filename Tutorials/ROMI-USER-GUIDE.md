@@ -36,6 +36,6 @@ To enable the robot, navigate to the "Robot Status" section and select "Teleoper
 
 Congratulations! You have just run your very first Romi program, and there are sure to many more programs to run in the future!
 
-## Future Learning with the Romi
+## Further Learning with the Romi
 
 Now that you have run your first Romi program, try experimenting with it. See if you can the Romi run at a slower maximum speed, or try making your Romi run with "Keyboard 0" instead of "Keyboard 2". Never stop experimenting with robot code, stay curious, and happy coding!
