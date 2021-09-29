@@ -17,7 +17,7 @@ We also use Git to push code to GitHub, which is like a Google Drive for code.
 
 ## Installing Java, WPILib, and VSCode:
 
-Follow the instructions from the [WPILib page](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html). [Here](https://github.com/wpilibsuite/allwpilib/releases) is the page where you actually download the package.
+Follow the **instructions** from the [WPILib page](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html). The page to **download** the installer from is located [here](https://github.com/wpilibsuite/allwpilib/releases).
 
 When you come to [this image](https://docs.wpilib.org/en/stable/_images/installer-vscode-download.png), select either "Download VSCode for Single Install" or "Download VSCode for Offline Install." If you already have VSCode installed, you can't install WPILib on top of that, unfortunately. You may be able to use a ZIP file of VSCode. See the above WPILib page for more details.
 
