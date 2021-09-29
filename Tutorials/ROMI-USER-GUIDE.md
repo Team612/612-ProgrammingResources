@@ -3,10 +3,10 @@
 This guide aims to provide an introduction to starting up and working with a Romi. 
 
 # Table of Contents
-1. [Introduction](##Introduction)
-2. [Booting Up a Romi](##Booting-Up-a-Romi)
-3. [Running Your First Romi Program](##Running-Your-First-Romi-Program)
-4. [Further Learning with the Romi](##Further-Learning-with-the-Romi)
+1. [Introduction](#Introduction)
+2. [Booting Up a Romi](#Booting-Up-a-Romi)
+3. [Running Your First Romi Program](#Running-Your-First-Romi-Program)
+4. [Further Learning with the Romi](#Further-Learning-with-the-Romi)
 
 ## Introduction 
 What is a Romi? Simply put, it is a scaled-down version of a standard FRC robot. While it lacks some functionality compared to a normal FRC robot, such as the ability to use pneumatics, it is a great tool for teaching the basics of robot software. 
