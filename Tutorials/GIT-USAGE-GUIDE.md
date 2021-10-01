@@ -1,9 +1,20 @@
 # Guide to using git, git bash, and GitHub while FRC programming
 
+Download guide is located [here](../DOWNLOAD-GUIDE.md##Installing-Git)
+
 ## Table of contents
+* [Opening git bash](#Opening-git-bash)
 * [Cloning a repository](#To-clone-a-repository)
 * [Pushing code to GitHub](#To-push-code-to-GitHub)
 * [External Resources](#External-Resources)
+
+## Opening git bash
+1. You have two options to open git bash:
+    * (Recommended) Opening a terminal within VSCode. See [this guide to VSCode terminals for more details](../DOWNLOAD-GUIDE.md###Terminal-Selection-Within-VSCode)
+    ![Git bash in VSCode](../static/Tutorials/git1_openingGitBashVSCode.png)
+
+    * Opening Windows File Explorer, going to the folder where your code and git repository is located, right clicking on some blank space, and clicking "Git Bash Here," as seen in the below image
+    ![Git bash in windows explorer](../static/Tutorials/git2_openingGitBashExplorer.png)
 
 ## To clone a repository <a name="To-clone-a-repository"></a>
 Often used to create code from a template

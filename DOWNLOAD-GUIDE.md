@@ -5,7 +5,8 @@ This guide will show you how to download the software necessary to do FRC-relate
 # Table of Contents
 1. [Intro](##Intro)
 2. [Java, WPILib, and VSCode](##Installing-Java,-WPILib,-and-VSCode)
-3. [Git](#Installing-Git)
+3. [Git](##Installing-Git)
+    * [Terminal Selection Within VSCode](###Terminal-Selection-Within-VSCode)
 
 ## Intro
 
@@ -30,6 +31,8 @@ When you come to [this image](https://docs.wpilib.org/en/stable/_images/installe
 On the page "Select the Items You Would Like to Install," all items are needed except for the C++ Compiler.
 
 ## Installing Git
+
+Full git usage guide is located [in the git tutorial file](Tutorials/GIT-USAGE-GUIDE.md)
 
 Git is what 612 uses to collaborate with code. It allows us to push and pull our code from GitHub so that we all can collaborate.
 
@@ -84,3 +87,23 @@ Type the following commands:
     git config --global user.name "Enter your name within these quotes here"
     git config --global user.email "Enter your email within these quotes here."
     ```
+
+### Terminal Selection Within VSCode
+8. One last step **for those on school computers** (may be helpful for those on personal computers as well):
+
+    Usage of a terminal is necessary for git. Terminals were the precursor to an operating system's graphical user interface, but are still in use today.
+
+    A terminal allows a user to send text commands to make the computer do particular actions. That is exactly how Git works: users enter text commands in order to push/pull code. For example, in the terminal, they can enter the command "git status" to get the status of all of their files.
+
+    VSCode has a feature that allows users to access a terminal without opening a new window. One can press Ctrl + Shift + `, or they can go to the "Terminal" menu and select "New Terminal."
+
+    Windows has two default terminals: the Command Prompt (CMD), and Windows PowerShell. Command Prompt is disabled on school computers, but PowerShell is usable via VSCode's integrated terminal. Therefore, it is necessary to switch the default terminal to PowerShell.
+
+    1. Press ```Ctrl + Shift + ` ```to open up the terminal.
+    2. A box will show up on the bottom of the screen.
+    ![terminal box](static/downloadGuide/git/9_terminal.PNG)
+    3. Click the down arrow on the top right of that box and click "Select Default Profile."
+    4. Select the powershell option. If there are two powershell options, select the one that has the "profiles" labels.
+    ![Powershell selection](static/downloadGuide/git/10_PowerShell_select.png)
+
+    If you are on a personal computer, you may have the option of having git bash as your default terminal, rather than PowerShell. That option is up to you.
