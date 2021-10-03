@@ -391,3 +391,5 @@ Remember to **think about it like order of operations**
 *   In the fifth line, the conditions in the parantheses are both true, but that means the expression is equivalent to `!true`, so in other words, the expression as a whole is false.
 *   In the sixth line, all three of the parameters in the parantheses are false, but those are negated by the exclamation in the front, so the code underneath runs.
 *   In the seventh line, the first condition in parantheses is true, but that's negated and becomes false. Since both have to be true, and they aren't, the code isn't executed.
+
+(Please note that the above code lines are just difficult examples. ***DO NOT*** write if/else states that are that complicated, or any other complicated code, for that matter. Simple, readable code is the best.)
