@@ -4,9 +4,9 @@ This guide will show you how to download the software necessary to do FRC-relate
 
 # Table of Contents
 1. [Intro](##Intro)
-2. [Java, WPILib, and VSCode](##Installing-Java,-WPILib,-and-VSCode)
-3. [Git](##Installing-Git)
-    * [Terminal Selection Within VSCode](###Terminal-Selection-Within-VSCode)
+2. [Java, WPILib, and VSCode](#Installing-Java,-WPILib,-and-VSCode)
+3. [Git](#Installing-Git)
+    * [Terminal Selection Within VSCode](#Terminal-Selection-Within-VSCode)
 
 ## Intro
 

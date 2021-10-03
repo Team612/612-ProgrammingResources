@@ -1,5 +1,9 @@
 # WPILib Tutorial
 
+## Table of Contents
+* [Intro](#Intro)
+* [Creating a WPILib Project](#Creating-a-WPILib-Project)
+
 ## Intro
 
 WPILib is the framework by which we program our robot. It allows us to set up a template for robot code very easily.
