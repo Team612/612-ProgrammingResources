@@ -22,11 +22,13 @@
     * [Logical Operators](##Logical-Operators)
 
 ## External Resources:
-1. [*Java in 14 Minutes* (video) by Alex Lee](https://www.youtube.com/watch?v=RRubcjpTkks)
+* [*CSAwesome* (online textbook)](https://csawesome.runestone.academy/runestone/books/published/csawesome/index.html)
+    - A comprehensive textbook for AP Computer Science A. Very conceptual. Sorted quite well, in case there's one particular concept you're struggling with.
+* [*Java in 14 Minutes* (video) by Alex Lee](https://www.youtube.com/watch?v=RRubcjpTkks)
     - Crash course in Java, covers everything very quickly.
-2. [*W3Schools* (website)](https://www.w3schools.com/java/default.asp)
+* [*W3Schools* (website)](https://www.w3schools.com/java/default.asp)
     - VERY extensive reference guide, used by beginners and experts alike.
-3. [*Java (Beginner) Programming Tutorials* by thenewboston](https://www.youtube.com/playlist?list=PLFE2CE09D83EE3E28)
+* [*Java (Beginner) Programming Tutorials* by thenewboston](https://www.youtube.com/playlist?list=PLFE2CE09D83EE3E28)
     - Concise yet low-key funny tutorials.
     - Recommended concepts and videos:
         * Variables (video 5)
