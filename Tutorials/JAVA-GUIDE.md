@@ -4,7 +4,7 @@
 
 ## Table of Contents
 * [Inroduction](#Introduction)
-    * [Hello World](##Hello-World)
+    * [Hello World](#Hello-World)
     * [Difference between print and println](##Difference-Between-print-and-println)
     * [Comments](##Comments)
     * [Summary](##Summary)
