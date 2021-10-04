@@ -17,6 +17,7 @@ During build season, you'll mainly be cloning the existing code on GitHub and wo
 
     The WPILib button on the right edge, which opens up WPILib- specific commands in the Command Palette.
     ![create new project, step 1](../static/Tutorials/WPILib1_projectCreation.png)
+    
     Selecting the command.
 
     ![create new project, step 2](../static/Tutorials/WPILib2_projectCreation.png)
