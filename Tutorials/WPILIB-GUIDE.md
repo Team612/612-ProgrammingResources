@@ -22,7 +22,7 @@ During build season, you'll mainly be cloning the existing code on GitHub and wo
 
     ![create new project, step 2](../static/Tutorials/WPILib2_projectCreation.png)
 
-2. In the WPILib creation screen, select the options so that you get the screen below:
+2. In the WPILib creation screen, select the options so that you get the screen below. The only things that don't stay the same are the project name and the folder, as well as the "Command-Based Sobot" section if you're working with Romis.
 
     ![Creation screen](../static/Tutorials/WPILib3_projectCreatorScreen.png)
     (With regards to the base folder, you may choose whichever folder you want. One handy tip is to have a folder somewhere on your computer for robotics-related code.)
