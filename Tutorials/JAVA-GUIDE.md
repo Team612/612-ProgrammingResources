@@ -393,3 +393,43 @@ Remember to **think about it like order of operations**
 *   In the seventh line, the first condition in parantheses is true, but that's negated and becomes false. Since both have to be true, and they aren't, the code isn't executed.
 
 (Please note that the above code lines are just difficult examples. ***DO NOT*** write if/else statements that are that complicated, or any other complicated code, for that matter. Simple, readable code is the best.)
+
+# Iteration (Loops)
+
+Loops allow a specific set of commands to run repeatedly for a certain amount of time, given any condition.
+
+## While Loops
+
+While loops repeat a set of commands *while* a particular condition is true.
+
+```java
+while (condition)
+{
+    /*code;*/
+}
+```
+
+Here's an example:
+```java
+int x = 254;
+while (x < 612)
+{
+    System.out.println(x);
+    x++;
+}
+//Last output: 611
+```
+
+Notice how the condition is checked *before* the code runs. That means when i = 612, the code won't run.
+If you want to check the condition *after* the code runs, use a do/while loop:
+```java
+int x = 254;
+do
+{
+    System.out.println(x);
+    x++;
+}
+while (x < 612);
+//last output: 612
+```
+In this case, when x equals 612, the code *does* run, then the condition is checked, and then it won't run again. The last input is 612.
