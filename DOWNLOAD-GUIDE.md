@@ -89,21 +89,55 @@ Type the following commands:
     ```
 
 ### Terminal Selection Within VSCode
-8. One last step **for those on school computers** (may be helpful for those on personal computers as well):
+8. One last step:
 
-    Usage of a terminal is necessary for git. Terminals were the precursor to an operating system's graphical user interface, but are still in use today.
-
-    A terminal allows a user to send text commands to make the computer do particular actions. That is exactly how Git works: users enter text commands in order to push/pull code. For example, in the terminal, they can enter the command "git status" to get the status of all of their files.
+    Usage of a terminal is necessary for git. A terminal allows a user to send text commands to make the computer do particular actions. That is exactly how Git works: users enter text commands in order to push/pull code. For example, in the terminal, they can enter the command "git status" to get the status of all of their files.
 
     VSCode has a feature that allows users to access a terminal without opening a new window. One can press Ctrl + Shift + `, or they can go to the "Terminal" menu and select "New Terminal."
 
-    Windows has two default terminals: the Command Prompt (CMD), and Windows PowerShell. Command Prompt is disabled on school computers, but PowerShell is usable via VSCode's integrated terminal. Therefore, it is necessary to switch the default terminal to PowerShell.
+    1. Press ```Ctrl + ,``` to access Settings.
+    2. On the top right corner, press the icon to the left of the WPILib logo to open the settings.json file.
+    3. Try to find the text ```"terminal.integrated.profiles.windows"``` by pressing ```Ctrl + F``` (it might be at the very bottom).   
+        1. Replace that entire section so that it resembles the following:
 
-    1. Press ```Ctrl + Shift + ` ```to open up the terminal.
-    2. A box will show up on the bottom of the screen.
-    ![terminal box](static/downloadGuide/git09_terminal.PNG)
-    3. Click the down arrow on the top right of that box and click "Select Default Profile."
-    4. Select the powershell option. If there are two powershell options, select the one that has the "profiles" labels.
-    ![Powershell selection](static/downloadGuide/git10_PowerShell_select.png)
+        ```JSON
+        "terminal.integrated.profiles.windows": {
+            "PowerShell": {
+                "source": "PowerShell",
+                "icon": "terminal-powershell"
+            },
+            "Command Prompt": {
+                "path": [
+                    "${env:windir}\\Sysnative\\cmd.exe",
+                    "${env:windir}\\System32\\cmd.exe"
+                ],
+                "args": [],
+                "icon": "terminal-cmd"
+            },
+            "Git": {
+                //"source": "Git Bash",
+                "path": "[insert path to Git\\bin\\bash]"
 
-    If you are on a personal computer, you may have the option of having git bash as your default terminal, rather than PowerShell. That option is up to you.
+                //On personal computers, it's usually in the ProgramFiles directory. 
+                //School computers, it's wherever you installed it to.
+            },
+        },
+        "terminal.integrated.defaultProfile.windows": "[choose a profile here]" //add comma here if there's some more stuff on the bottom
+        ```
+
+        For example:
+
+        ![Editing terminal settings](static/downloadGuide/git10_settings.json.png)
+
+        You can choose a default terminal. PowerShell and Command Prompt (CMD) are Windows defaults, but Git Bash may be easier as it states which branch you are on.
+
+        #### Visual Differences between PowerShell, Command Prompt, and Git Bash:
+
+        Git Bash:
+        ![Git Bash shows the branch name whenever you're on a git repository](static/downloadGuide/git11_gitBash.png)
+
+        PowerShell:
+        ![Powershell has highlighting, but it doesn't show the branch name](static/downloadGuide/git12_PS.png)
+
+        CMD
+        ![CMD doesn't show the branch name or has highlighting](static/downloadGuide/git13_CMD.png)
