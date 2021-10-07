@@ -111,22 +111,33 @@ Type the following commands:
                     "${env:windir}\\Sysnative\\cmd.exe",
                     "${env:windir}\\System32\\cmd.exe"
                 ],
-                "args": ["@echo off", "start cmd.exe"],
+                "args": [],
                 "icon": "terminal-cmd"
             },
             "Git": {
                 //"source": "Git Bash",
                 "path": "[insert path to Git\\bin\\bash]"
-                //On personal computers, it's usually in the ProgramFiles directory. School computers, it's wherever you installed it to.
+
+                //On personal computers, it's usually in the ProgramFiles directory. 
+                //School computers, it's wherever you installed it to.
             },
         },
-        "terminal.integrated.defaultProfile.windows": "[choose a profile here]"
-        //add comma here if there's some more stuff on the bottom
+        "terminal.integrated.defaultProfile.windows": "[choose a profile here]" //add comma here if there's some more stuff on the bottom
         ```
 
         For example:
 
         ![Editing terminal settings](static/downloadGuide/git10_settings.json.png)
 
-        If you are on a personal computer, you can simply write ```"args": []``` instead of ```"args": ["@echo off", "start cmd.exe"]```.
-        You can choose a default terminal. PowerShell and Command Prompt are Windows defaults, but git bash may be easier as it states which branch you are on.
+        You can choose a default terminal. PowerShell and Command Prompt (CMD) are Windows defaults, but Git Bash may be easier as it states which branch you are on.
+
+        #### Visual Differences between PowerShell, Command Prompt, and Git Bash:
+
+        Git Bash:
+        ![Git Bash shows the branch name whenever you're on a git repository](static/downloadGuide/git11_gitBash.png)
+
+        PowerShell:
+        ![Powershell has highlighting, but it doesn't show the branch name](static/downloadGuide/git12_PS.png)
+
+        CMD
+        ![CMD doesn't show the branch name or has highlighting](static/downloadGuide/git13_CMD.png)
