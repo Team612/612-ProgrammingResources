@@ -20,10 +20,14 @@
 * [Branching](#Branching)
     * [Comparison Operators](#Comparison-Operators)
     * [Logical Operators](#Logical-Operators)
+* [Iteration (Loops)](#Iteration-(Loops))
+    * [While Loops](#While-Loops)
+    * [For Loops](#For-Loops)
+* [Object-Oriented Programming](#Object-Oriented-Programming)
 
 ## External Resources:
 * [*CSAwesome* (online textbook)](https://csawesome.runestone.academy/runestone/books/published/csawesome/index.html)
-    - A comprehensive textbook for AP Computer Science A. Very conceptual. Sorted quite well, in case there's one particular concept you're struggling with.
+    - A comprehensive textbook for AP Computer Science A. Very conceptual. Sorted quite well, in case there's one particular concept you're struggling with. A lot of ads if you don't have an adblocker, unfortunately.
 * [*Java in 14 Minutes* (video) by Alex Lee](https://www.youtube.com/watch?v=RRubcjpTkks)
     - Crash course in Java, covers everything very quickly.
 * [*W3Schools* (website)](https://www.w3schools.com/java/default.asp)
@@ -298,6 +302,28 @@ The `\` character is an escape character and has a few capabilities within a str
 | \\' | inserts the \' character in a string because it would otherwise be an illegal character |
 etc.
 
+Strings have a variety of methods that allow users to edit them.
+
+For example, you can use the .indexOf() method to find the index of a substring.
+
+```java
+String test = "hello world";
+System.out.println(test.indexOf("world"));
+//Output is 6, so the first character of the string "world" is the 7th character in Java.
+
+System.out.println(test.substring(6));
+//Outputs from the 7th character (index 6) to the end, so "world"
+System.out.println(test.substring(2, 5));
+//outputs from the 3rd character (index 2) up to (*but not including*) 5, the 6th one (index 5). Output: "llo"
+```
+
+#### Java Indexing
+**IMPORTANT POINT ABOUT NUMBERS IN JAVA**
+
+Java starts counting at 0 instead of 1. Therefore, to get the first character of the string test, they have to do "test.charAt(1)"
+
+## ArrayLists
+
 # Branching
 
 There are statements called if/else if/else statements. Below is a walkthrough of a program to demonstrate what they do.
@@ -315,7 +341,7 @@ if (x)
 ```
 In the above command, if the parameter x is true, the commands will be executed and the *else if* and *else* below statements will be skipped; otherwise, the program will skip to next statement. Can also write if "(x==true)" if you'd like.
 
-In this case, this *if* statement is skipped, and the compiler checks the first *else if* statement, if there is any. If there isn't, it'll check for an *else* statement and execute that, but if not, it'll just continue with the rest of the program. In this case, there is an *else if* statement.
+In this case, **this *if* statement is skipped, and the compiler checks the first *else if* statement, if there is any. If there isn't, it'll check for an *else* statement and execute that, but if not, it'll just continue with the rest of the program. In this case, there is an *else if* statement.
 ```java
 else if (y) { //commands that would be executed, but aren't because y = false. }
 ```
@@ -324,7 +350,7 @@ The above statement, in addition to all of the statements below, are completely 
 Simply put, the else if statement is another if statement that gets executed if the first if statement isn't met. This one is checking if y is true, and since it's not, it goes to the next else if statement below. If it was true, it would execute these commands and skip the rest of the *else if* statements and the *else* statement.
 
 ```java
-else if (z == false) { //does not execute these commands. }
+else if (z == false) { /*does not execute these commands.*/ }
 ```
 This else if statement is actually checking to see if the boolean z is *false*. The reason why two equal signs are used is because one equals sign is already used to assign variables. The second equals sign tells the compiler that it should compare two variables, or a variable and a value, rather than assign one variable to a value. More on comparison operators below.
 
@@ -333,6 +359,8 @@ Since z is not false, the program will execute the *else* statement below. Again
 ```java
 else { System.out.println("none of the ones above are true, can we get an F in the chat?"); }
 ```
+
+**Do note that each if statement "resets" the process. If you have an if statement and that's true, the else/if and else statements will be skipped, but if there's another if statement, the process will start over again.**
 
 ## Comparison Operators:
 Comparison operators compare 2 variables:
@@ -420,16 +448,182 @@ while (x < 612)
 //Last output: 611
 ```
 
-Notice how the condition is checked *before* the code runs. That means when i = 612, the code won't run.
-If you want to check the condition *after* the code runs, use a do/while loop:
+## For Loops
+
+Here is a better way to write the above piece of code:
+
 ```java
-int x = 254;
-do
+for (int x = 254; x <= 612; x++)
 {
     System.out.println(x);
-    x++;
 }
-while (x < 612);
-//last output: 612
+
+//Alternatively:
+x = 254;
+for ( ; x <= 612; x++)
+{
+    System.out.println(x);
+}
 ```
-In this case, when x equals 612, the code *does* run, then the condition is checked, and then it won't run again. The last input is 612.
+
+For loops iterate through a range of numbers.
+
+To break a loop, type ```break;```. For example:
+
+```java
+for (int x = 0; x <= 5; x++) {
+    if (x % 2 == 0) { //if x is even
+        System.out.println("Found an even!");
+        break; //breaks the entire for loop.
+    }
+}
+```
+
+# Object-Oriented Programming
+
+If you recall [reference types](#Reference-Types), you'll remember that reference types refer to something in Java known as "objects." Soon, you'll learn how to make objects of your own!
+
+A *class* is a template for an object. For example, we can create a Person class that is a generic template of a person.
+* Classes have attributes, which are traits. A person can have a height, birthday, etc.
+* Classes also have methods, which are things that can do. A person can breathe, consume food, or think. One can set a "sayBirthday" method where they say their birthday.
+
+An *object* is an "instance" of that object that fills in these attributes. A person can have a height of 69 inches, etc. They can also have a method with a particular set of parameters. 
+
+
+|A Class        |An Object      |
+|---------------|---------------|
+|**Attributes**                 |
+|Person         |Myrrh          |
+|Birthday       |May 1st, 2004  |
+|HeightInches   |69             |
+|Intelligence   |Stupid         |
+|FRCTeam        |612            |
+|Subteam1       |Programming    |
+|Subteam2       |Marketing      |
+
+Here's how to establish a class:
+
+```java
+public class Person {
+
+    //establish attributes:
+    String birthdday = "May 1st, 2004";
+    int heightInches = 69;
+    String intelligence = "Stupid";
+    int FRCTeam = 612;
+    String subteam1 = "Programming";
+    String subteam2 = "Marketing";
+
+    //establish methods
+    public static void sayHello() {
+        System.out.println("Hello! I am a human!");
+    }
+    public static void sing() {
+        System.out.println("I'm the imposter...I'm Mr. Sus.");
+    }
+    public static void infoDump() {
+        System.out.println(
+            "Hi! My birthday is " + birthday + "\n" + 
+            "My height is " + heightInches + "\n" + 
+            "In terms of intelligence, I am very " + intelligence + "\n" +
+            "My FRC team is " + FRCTeam + "\n" +
+            "I am on the " + subteam1 + " and " + subteam2 + " subteams"
+        );
+    }
+}
+```
+And here's how to make an object out of the class
+```java
+public static void main(String[] args) {
+    Person myrrh = new Person();
+    myrrh.sayHello(); //call sayHello method
+    myrrh.sing();
+    myrrh.infoDump(); //calls the infoDump method and prints out all the information
+    Person myrrh2 = new Person(); //we're cloning Myrrh! Everyone's gonna hate us for this.
+    myrrh2.sing();
+}
+```
+
+## Constructors
+Constructors are methods enable programmers to set their own attributes within a class.
+
+For example, let's say you have a Dog class. Not every dog is of the same breed or has the same height, so you can have different dog objects where the attributes are set:
+
+**Option 1**
+```java
+public class Person {
+
+    //establish empty values as attributes:
+    String name, birthday;
+    public Person (String n, String b) {
+        //One can put in their own name and bday parameters
+        name = n;
+        birthday = b;
+        //sets variables above 
+    }
+    public static void sayNameAndBday() {
+        System.out.println("I'm " + name + "and my bday is " + birthday);
+    }
+}
+```
+
+**Option 2**
+```java
+public class Person {
+
+    //establish variables as before
+    String name; birthday;
+    //diff method of setting constructor
+    public Person(String name, String birthday) {
+        this.name = name;
+        this. birthday = birthday;
+        //this keyword differentiates between the "name" variable set above and the "name" variale set as an input.
+    }
+}
+```
+
+**Setting default values with constructors**
+```java
+public class Person {
+    String name, birthday;
+
+    public Person() { //no parameters
+        this.name = "Myrrh";
+        this.birthday = "May 1st, 2004";
+    }
+    public Person(String name) {
+        this.name = name;
+        this.birthday = "May 1st, 2004";
+    }
+    public Person(String name, String birthday) {
+        this.name = name;
+        this.birthday = birthday;
+    }
+}
+```
+## Getters and Setters
+The preferred method of to set and use variables is to set variables to "private" and modify them within the class.
+Getters retrieve a value from a class, and setters set a value.
+If a variable is private, it cannot be accessed outside of the class without a getter or a setter method, adding some extra security
+
+```java
+public class Pizza {
+    private int slices;
+    private String topping;
+    public Pizza (int slices, String topping) {
+        this.slices = slices;
+        this.topping = topping;
+    }
+
+    public static int getSlices() { //here's our getter. it'll get the number of slices.
+        return slices;
+    }
+    public static void setSlices(int s) {//here's our setter, where we'll set the number of slices to a certain number
+        slices = s;
+    }
+    public static void splitSlices(int s) { //here's another setter, kinda
+        slices *= s;
+        System.out.println("slices have been halved.");
+    }
+}
+```
